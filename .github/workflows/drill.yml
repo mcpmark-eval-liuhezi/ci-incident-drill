@@ -1,0 +1,11 @@
+name: CI Incident Drill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fail-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Intentional failure step
+        run: exit 1
